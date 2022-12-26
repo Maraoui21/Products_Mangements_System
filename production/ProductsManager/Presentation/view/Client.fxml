@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab styleClass="tabsStyle" text="Clients" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Presentation.Controller.ClientController"
+            >
+    <content>
+        <AnchorPane styleClass="AnchorPan" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="clientName" promptText="Nom de client" layoutX="14.0" layoutY="60.0" />
+                <Label styleClass="Labels" layoutX="14.0" layoutY="38.0" text="Nom" />
+                <Button onAction="#addClient" styleClass="btn" layoutX="187.0" layoutY="60.0" mnemonicParsing="false" text="Ajouter" />
+                <Button onAction="#removeClient" styleClass="btn" layoutX="257.0" layoutY="60.0" mnemonicParsing="false" text="Supprimer" />
+                <TableView fx:id="clientTable" layoutY="118.0" prefHeight="253.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="IdClient" prefWidth="164.0" text="ID" />
+                        <TableColumn fx:id="NomClient" prefWidth="436.00006103515625" text="Nom" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

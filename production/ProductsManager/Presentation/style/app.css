@@ -1,0 +1,20 @@
+.root { -fx-focus-color: transparent; }
+.AnchorPan{
+    -fx-background-color: #1c205e;
+}
+
+.Labels {
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+
+.tabsStyle {
+    -fx-text-fill: white;
+    -fx-background-color: white;
+}
+
+.btn{
+    -fx-background-color: white;
+    -fx-padding: 5px 8px;
+    -fx-spacing: 5px;
+}

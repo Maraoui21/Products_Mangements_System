@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab styleClass="tabsStyle" text="Products" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Presentation.Controller.ProductController">
+    <content>
+        <AnchorPane styleClass="AnchorPan" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="Nom" layoutX="14.0" layoutY="46.0" prefHeight="26.0" prefWidth="203.0" promptText="Nom de produit" />
+                <Label styleClass="Labels" layoutX="16.0" layoutY="20.0" text="Nom " />
+                <Label styleClass="Labels" layoutX="17.0" layoutY="84.0" text="Prix" />
+                <TextField fx:id="Prix" layoutX="15.0" layoutY="105.0" prefHeight="26.0" prefWidth="203.0" promptText="Prix"/>
+                <Label styleClass="Labels" layoutX="300.0" layoutY="20.0" text="Qte" />
+                <TextField fx:id="Qte" layoutX="300.0" layoutY="47.0" prefHeight="26.0" prefWidth="194.0" promptText="Quantite"/>
+                <ComboBox fx:id="categorieMenu" layoutX="297.0" layoutY="98.0">
+                </ComboBox>
+                <Button styleClass="btn" onAction="#addProduct" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" text="Ajouter" />
+                <Button styleClass="btn" onAction="#remove" layoutX="71.0" layoutY="147.0" mnemonicParsing="false" text="supprimer" />
+                <Button styleClass="btn" onAction="#filterBycategorie" layoutX="150.0" layoutY="148.0" mnemonicParsing="false" text="Filter par categorie" />
+                <TableView fx:id="ProductsTable" layoutY="193.0" prefHeight="178.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="145.5999755859375" text="ID" />
+                        <TableColumn fx:id="nom" prefWidth="208.800048828125" text="Nom" />
+                        <TableColumn fx:id="prix" prefWidth="164.79998779296875" text="Prix" />
+                        <TableColumn fx:id="qte" prefWidth="81.5999755859375" text="QTE" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

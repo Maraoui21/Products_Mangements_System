@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<Tab styleClass="tabsStyle" text="Categories" fx:controller="Presentation.Controller.CategorieController" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane styleClass="AnchorPan" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <Label styleClass="Labels" layoutX="15.0" layoutY="25.0" prefHeight="18.0" prefWidth="68.0" text="Nom" />
+                <TextField fx:id="categoriesName" layoutX="14.0" layoutY="50.0" prefHeight="26.0" prefWidth="165.0" />
+                <TableView fx:id="table" layoutY="171.0" prefHeight="200.0" prefWidth="607.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="120.79998779296875" text="ID"/>
+                        <TableColumn fx:id="nom" prefWidth="478.4000244140625" text="NOM"/>
+                    </columns>
+                </TableView>
+                <Button styleClass="btn" onAction="#addCategorie" layoutX="200.0" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Ajoutter" />
+                <Button styleClass="btn" onAction="#removeCategorie" layoutX="285.0" layoutY="51.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="supprimer" />
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

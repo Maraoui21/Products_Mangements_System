@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab styleClass="tabsStyle" text="Commande" xmlns="http://javafx.com/javafx"
+     xmlns:fx="http://javafx.com/fxml"
+     fx:controller="Presentation.Controller.CommandeController"
+            >
+        <content>
+            <AnchorPane styleClass="AnchorPan" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                    <ComboBox fx:id="ClientsBox" layoutX="14.0" layoutY="42.0" prefWidth="150.0" />
+                    <Label styleClass="Labels" layoutX="14.0" layoutY="18.0" text="Client" />
+                    <ComboBox fx:id="ProductsBox" layoutX="14.0" layoutY="106.0" prefWidth="150.0" />
+                    <Label styleClass="Labels" layoutX="14.0" layoutY="81.0" text="Produit" />
+                    <TextField fx:id="QteField" promptText="Quantite" layoutX="236.0" layoutY="43.0" prefHeight="26.0" prefWidth="185.0" />
+                    <Label styleClass="Labels" layoutX="238.0" layoutY="20.0" text="Qte" />
+                    <Button onAction="#addCommande" styleClass="btn" layoutX="238.0" layoutY="93.0" mnemonicParsing="false" text="Ajouter" />
+                    <Button onAction="#deleteCommande" styleClass="btn" layoutX="309.0" layoutY="94.0" mnemonicParsing="false" text="Supprimer" />
+                    <Button onAction="#filterCLientCommandes" styleClass="btn" layoutX="393.0" layoutY="93.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="filtre clients" />
+                    <TableView fx:id="TableCommande" layoutY="151.0" prefHeight="220.0" prefWidth="600.0">
+                        <columns>
+                            <TableColumn fx:id="idCommande" prefWidth="149.60003662109375" text="ID" />
+                            <TableColumn fx:id="ProduitName" prefWidth="182.4000244140625" text="Produit" />
+                            <TableColumn fx:id="QTE" prefWidth="135.199951171875" text="QTE" />
+                            <TableColumn fx:id="Client" prefWidth="132.0" text="client" />
+                        </columns>
+                    </TableView>
+                </children>
+            </AnchorPane>
+        </content>
+    </Tab>
