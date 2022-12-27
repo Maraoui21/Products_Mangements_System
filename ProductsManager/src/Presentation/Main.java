@@ -1,5 +1,6 @@
 package Presentation;
 
+import Dao.SingleDbConnection;
 import Dao.entities.Commande;
 import Dao.implementation.ClientImpl;
 import Dao.implementation.CommandeImpl;
@@ -10,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TabPane;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 

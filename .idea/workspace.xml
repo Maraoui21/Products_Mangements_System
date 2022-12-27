@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProductsManager:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2e1f8a3f-acfd-458f-bda4-436bc71a52ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +38,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "C:/Users/yassi/OneDrive/Desktop/PROJECTS/Java/TP_JavaFx/ProductsManager",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
@@ -64,7 +69,7 @@
       <workItem from="1672008009553" duration="9781000" />
       <workItem from="1672017997458" duration="6000" />
       <workItem from="1672018083940" duration="1352000" />
-      <workItem from="1672083702736" duration="12192000" />
+      <workItem from="1672083702736" duration="15634000" />
     </task>
     <servers />
   </component>
